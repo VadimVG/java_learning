@@ -40,7 +40,7 @@ public class ProductCRUD {
                 if (cnt.length() > 4) {
                     cnt = cnt.substring(0, 4);
                 }
-                String upd= String.format("%-8d%-30s%-8s%-4s", Integer.parseInt(id.replace(" ", "")), name, price, cnt); // преобразование стррки в нужный формат
+                String upd= String.format("%-8d%-30s%-8s%-4s", Integer.parseInt(id.replace(" ", "")), name, price, cnt); // преобразование строки в нужный формат
                 while ((line=file.readLine())!=null){
                     if (Integer.parseInt(line.substring(0, 8).replace(" ", ""))!=Integer.parseInt(id.replace(" ", ""))) {
                         total.add(line);
