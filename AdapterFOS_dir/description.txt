@@ -1,0 +1,1 @@
+Используя класс AdapterFileOutputStream, адаптировать FileOutputStream к новому интерфейсу AmigoStringWriter.
